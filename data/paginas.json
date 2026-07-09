@@ -1,0 +1,80 @@
+[
+  {
+    "arquivo": "index.html",
+    "rotulo": "Introdução",
+    "titulo": "O Papel da Base no Futebol Paraense",
+    "css": ["css/reset.css", "css/chapter.css", "css/home.css"]
+  },
+  {
+    "arquivo": "comeco-do-sonho.html",
+    "rotulo": "Sonho",
+    "titulo": "O começo do sonho",
+    "css": ["css/reset.css", "css/chapter.css", "css/comeco-do-sonho.css"]
+  },
+  {
+    "arquivo": "a-rotina-invisivel.html",
+    "rotulo": "Rotina",
+    "titulo": "A rotina invisível dos atletas da base",
+    "css": ["css/reset.css", "css/chapter.css", "css/a-rotina-invisivel.css"]
+  },
+  {
+    "arquivo": "o-futebol-como-esperanca.html",
+    "rotulo": "Esperança",
+    "titulo": "O futebol como esperança de mudança de vida",
+    "css": ["css/reset.css", "css/chapter.css", "css/o-futebol-como-esperanca.css"]
+  },
+  {
+    "arquivo": "a-realidade.html",
+    "rotulo": "Realidade",
+    "titulo": "A realidade estrutural do futebol de base no Pará",
+    "css": ["css/reset.css", "css/chapter.css", "css/a-realidade.css"]
+  },
+  {
+    "arquivo": "resultados-precoce.html",
+    "rotulo": "Resultados",
+    "titulo": "Formar e vencer: a pressão precoce sobre a base",
+    "css": ["css/reset.css", "css/chapter.css", "css/resultados-precoce.css"]
+  },
+  {
+    "arquivo": "o-funil.html",
+    "rotulo": "Funil",
+    "titulo": "O funil do futebol brasileiro",
+    "css": ["css/reset.css", "css/chapter.css", "css/o-funil.css"]
+  },
+  {
+    "arquivo": "o-olhar-da-comissao.html",
+    "rotulo": "Comissão",
+    "titulo": "O olhar da comissão técnica e da coordenação",
+    "css": ["css/reset.css", "css/chapter.css", "css/o-olhar-da-comissao.css"]
+  },
+  {
+    "arquivo": "saude-fisica-e-mental.html",
+    "rotulo": "Saúde",
+    "titulo": "Saúde física e mental: o desgaste invisível da formação",
+    "css": ["css/reset.css", "css/chapter.css", "css/saude-fisica-e-mental.css"]
+  },
+  {
+    "arquivo": "da-base-para-o-profissional.html",
+    "rotulo": "Profissional",
+    "titulo": "A transição da base para o profissional",
+    "css": ["css/reset.css", "css/chapter.css", "css/da-base-para-o-profissional.css"]
+  },
+  {
+    "arquivo": "quando-o-sonho-da-certo.html",
+    "rotulo": "Deu certo",
+    "titulo": "Quando o sonho dá certo",
+    "css": ["css/reset.css", "css/chapter.css", "css/quando-o-sonho-da-certo.css"]
+  },
+  {
+    "arquivo": "os-talentos-que-ficaram.html",
+    "rotulo": "Talentos",
+    "titulo": "Os talentos que ficam pelo caminho",
+    "css": ["css/reset.css", "css/chapter.css", "css/os-talentos-que-ficaram.css"]
+  },
+  {
+    "arquivo": "conclusao.html",
+    "rotulo": "Conclusão",
+    "titulo": "O futuro da base no futebol paraense",
+    "css": ["css/reset.css", "css/chapter.css", "css/conclusao.css"]
+  }
+]

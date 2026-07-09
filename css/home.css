@@ -1,0 +1,124 @@
+/* CSS exclusivo: index.html */
+
+.home-hero {
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 58px 32px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-hero .kicker {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 56px;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.8rem, 5.4vw, 5.4rem);
+  line-height: 0.95;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  max-width: 1200px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 1 vw, 1.75rem);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.photo-mosaic {
+  width: clamp(770px, 68vw, 1080px);
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 14px;
+  margin: 4px auto 0;
+}
+
+/*imagem da mosaico*/
+.photo-mosaic img {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  background: var(--gray-200);
+  object-fit: cover;
+  display: block;
+}
+
+/*nome dos autores*/
+.authors {
+  font-size: 1.2rem;
+  font-weight: 50;
+  margin-top: 22px;
+}
+
+/*indicador de rolagem "ROLE PARA LER"*/
+.scroll-indicator {
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--black);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.875rem;
+  animation: floatScroll 1.8s ease-in-out infinite;
+}
+
+
+.scroll-indicator small {
+  font-size: 1.2rem;
+}
+
+@keyframes floatScroll {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .photo-mosaic {
+    width: min(100%, 620px);
+    gap: 4px;
+  }
+
+  .photo-mosaic img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .home-hero {
+    padding-top: 44px;
+  }
+
+  .home-hero .kicker {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .photo-mosaic {
+    width: 100%;
+    gap: 3px;
+  }
+
+  .authors {
+    font-size: 0.82rem;
+  }
+}

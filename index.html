@@ -9,47 +9,54 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 
-
+  <!-- CSS: index.html → reset.css + chapter.css + home.css -->
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/chapter.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
   <header class="site-navbar">
     <div class="brand">
-      <img src="assets/images/logo-ufpa.png" alt="Logo UFPA" class="brand-logo">
+      <img src="assets/home/logo-ufpa.png" alt="Logo UFPA" class="brand-logo">
       <span class="brand-divider"></span>
       <strong>Lab. Jornalismo Digital</strong>
     </div>
 
-<nav class="nav-scroll" id="navScroll" aria-label="Navegação principal">
+    <button class="nav-arrow nav-arrow-left" type="button" aria-label="Rolar menu para esquerda" data-scroll-menu="-1">
+      ‹
+    </button>
+
+    <nav class="nav-scroll" id="navScroll" aria-label="Navegação principal">
+      <button class="nav-close" type="button" aria-label="Fechar menu" data-close-menu>×</button>
       <a href="index.html">Introdução</a>
       <a href="comeco-do-sonho.html">Sonho</a>
-      <a href="a-rotina.html">Rotina</a>
+      <a href="a-rotina-invisivel.html">Rotina</a>
       <a href="o-futebol-como-esperanca.html">Esperança</a>
       <a href="a-realidade.html">Realidade</a>
       <a href="resultados-precoce.html">Resultados</a>
-      <a href="o-funil.html" class="active">Funil</a>
+      <a href="o-funil.html">Funil</a>
       <a href="o-olhar-da-comissao.html">Comissão</a>
       <a href="saude-fisica-e-mental.html">Saúde</a>
       <a href="da-base-para-o-profissional.html">Profissional</a>
-      <a href="quando-o-sonho-da-certo.html">Deu certo</a>
       <a href="os-talentos-que-ficaram.html">Talentos</a>
       <a href="conclusao.html">Conclusão</a>
     </nav>
 
-    <button class="nav-arrow" type="button" aria-label="Rolar menu para direita" data-scroll-menu>
+    <button class="nav-arrow nav-arrow-right" type="button" aria-label="Rolar menu para direita" data-scroll-menu="1">
       ›
+    </button>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      ☰
     </button>
   </header>
 
   <main>
     <section class="home-hero" id="inicio">
-      <p class="kicker">UMA REPORTAGEM LONG FORM</p>
-
+      <p>UMA REPORTAGEM LONG FORM</p>
+    <br>
       <h1>O Papel da Base no Futebol Paraense</h1>
 
       <p class="subtitle">
@@ -57,21 +64,20 @@
       </p>
 
       <div class="photo-mosaic" aria-label="Galeria de atletas da base">
-        <img src="assets/images/home/atleta-01.jpg" alt="Atleta da base em campo">
-        <img src="assets/images/home/atleta-02.jpg" alt="Atleta da base em treino">
-        <img src="assets/images/home/atleta-03.jpg" alt="Jovem atleta durante atividade">
-        <img src="assets/images/home/atleta-04.jpg" alt="Atleta da base no gramado">
-        <img src="assets/images/home/atleta-05.jpg" alt="Jogador da base em treinamento">
-        <img src="assets/images/home/atleta-06.jpg" alt="Atleta em campo">
-        <img src="assets/images/home/atleta-07.jpg" alt="Jovem jogador da base">
-
-        <img src="assets/images/home/atleta-08.jpg" alt="Atleta da base em campo">
-        <img src="assets/images/home/atleta-09.jpg" alt="Atleta da base em treino">
-        <img src="assets/images/home/atleta-10.jpg" alt="Jovem atleta durante atividade">
-        <img src="assets/images/home/atleta-11.jpg" alt="Atleta da base no gramado">
-        <img src="assets/images/home/atleta-12.jpg" alt="Jogador da base em treinamento">
-        <img src="assets/images/home/atleta-13.jpg" alt="Atleta em campo">
-        <img src="assets/images/home/atleta-14.jpg" alt="Jovem jogador da base">
+        <img src="assets/home/atleta-01.jpg" alt="Atleta da base em campo">
+        <img src="assets/home/atleta-02.jpg" alt="Atleta da base em treino">
+        <img src="assets/home/atleta-03.jpg" alt="Jovem atleta durante atividade">
+        <img src="assets/home/atleta-04.jpg" alt="Atleta da base no gramado">
+        <img src="assets/home/atleta-05.jpg" alt="Jogador da base em treinamento">
+        <img src="assets/home/atleta-06.jpg" alt="Atleta em campo">
+        <img src="assets/home/atleta-07.jpg" alt="Jovem jogador da base">
+        <img src="assets/home/atleta-08.jpg" alt="Atleta da base em campo">
+        <img src="assets/home/atleta-09.jpg" alt="Atleta da base em treino">
+        <img src="assets/home/atleta-10.jpg" alt="Jovem atleta durante atividade">
+        <img src="assets/home/atleta-11.jpg" alt="Atleta da base no gramado">
+        <img src="assets/home/atleta-12.jpg" alt="Jogador da base em treinamento">
+        <img src="assets/home/atleta-13.jpg" alt="Atleta em campo">
+        <img src="assets/home/atleta-14.jpg" alt="Jovem jogador da base">
       </div>
 
       <p class="authors">
@@ -84,29 +90,61 @@
       </a>
     </section>
 
-    <article class="story-content" id="introducao">
-      <p class="lead">
-        O futebol paraense carrega sonhos que começam cedo, muitas vezes em campos pequenos, bairros afastados e rotinas marcadas por esforço, disciplina e incerteza.
+    <article class="story-content chapter-page" id="introducao">
+      <header class="chapter-header">
+        <p class="kicker">CAPÍTULO 1</p>
+        <h1>Clube do Remo, Paysandu e Tuna: o peso de formar talentos no futebol paraense</h1>
+        <p class="chapter-summary">
+          Apresentação dos clubes, relevância, identidade regional e o papel da base dentro dessas instituições.
+        </p>
+      </header>
+
+      <section class="media-row">
+        <div class="media-text">
+          <p class="lead">
+            O futebol é o esporte mais popular do mundo. Segundo pesquisa feita pela
+            <a href="https://www.statista.com/statistics/1112665/football-popularity-worldwide/" target="_blank" rel="noopener noreferrer">
+              Statistics &amp; Data
+            </a>,
+            que analisava os anos de 1930 até 2020, o futebol reúne mais de 4 bilhões de seguidores em todo o mundo. Na capital paraense, essa estatística se manifesta de forma intensa, refletindo a forte ligação entre o esporte e a identidade cultural da população.
+          </p>
+
+          <p>
+            Em Belém, o esporte está presente no cotidiano de milhares de pessoas, que acompanham seus clubes com entusiasmo, tradição e sentimento de pertencimento. Essa paixão é representada principalmente pelo Clube do Remo, pelo Paysandu Sport Club e pela Tuna Luso Brasileira, três instituições que desempenham papel fundamental na história do futebol paraense.
+          </p>
+        </div>
+
+        <figure class="side-media">
+          <button
+            class="media-open"
+            type="button"
+            data-modal-image="assets/images/home/estadio.png"
+            aria-label="Ampliar foto do estádio do Mangueirão, em Belém"
+          >
+            <img
+              src="assets/home/mangueirao.webp"
+              alt="Foto do estádio do Mangueirão, em Belém"
+            >
+          </button>
+
+          <figcaption>
+            Foto: João Caio / Ag. Pará.
+          </figcaption>
+        </figure>
+      </section>
+
+      <p>
+        Remo e Paysandu protagonizam o clássico Re-Pa, uma das maiores rivalidades do futebol brasileiro, capaz de mobilizar multidões, lotar estádios e movimentar a cidade inteira em dias de jogo. Ao lado deles, a Tuna Luso Brasileira também possui grande relevância histórica e esportiva, contribuindo para o fortalecimento do futebol local e para a formação de atletas ao longo de décadas.
       </p>
 
       <p>
-        Antes de qualquer estádio lotado, contrato profissional ou transmissão esportiva, existe uma etapa silenciosa da formação: a base. É nela que jovens atletas aprendem a lidar com a pressão, a concorrência, os treinos, a distância da família e a expectativa de transformar talento em futuro.
+        Desde suas fundações, os clubes são fundamentais na revelação de novos atletas para o futebol brasileiro. Por meio de suas categorias de base, têm contribuído para a formação de jogadores que alcançaram destaque em diferentes níveis do esporte. Entre eles estão Paulo Henrique Ganso e Yago Pikachu, revelados pelo Paysandu, Rony, que iniciou sua trajetória no Remo, e Giovanni Messias, formado na Tuna Luso e que futuramente atuaria no Barcelona, da Espanha.
       </p>
-
-      <p>
-        Esta reportagem acompanha parte dessa caminhada e busca entender o papel das categorias de base no futebol paraense. Mais do que falar de resultados, o objetivo é observar a estrutura, os desafios, as oportunidades e os limites de um sistema que alimenta sonhos, mas também impõe barreiras.
-      </p>
-
-      <p>
-        Ao longo dos capítulos, a narrativa percorre histórias de atletas, treinadores e profissionais que vivem diariamente os bastidores da formação esportiva. A base, muitas vezes invisível ao público, é o ponto de partida para compreender o futebol para além dos noventa minutos.
-      </p>
-
-      <div class="next-chapter">
-        <a href="o-funil.html">Ler próximo teste: O Funil do Futebol Brasileiro →</a>
-      </div>
     </article>
-  </main>
+
+    <div class="modal-content" id="modalContent"></div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
-</html>=
+</html>

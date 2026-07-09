@@ -1,0 +1,21 @@
+/* CSS exclusivo: comeco-do-sonho.html */
+
+.side-video {
+  width: 100%;
+  padding: 22px 0;
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+}
+
+.video-box video {
+  width: 100%;
+  max-height: 290px;
+  object-fit: cover;
+  background: #000;
+  border: 1px solid var(--gray-200);
+}

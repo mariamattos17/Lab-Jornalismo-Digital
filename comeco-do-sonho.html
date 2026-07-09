@@ -4,325 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>O Funil do Futebol Brasileiro | Lab. Jornalismo Digital</title>
+  <title>Onde o sonho começa  | Lab. Jornalismo Digital</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700;800;900&display=swap" 
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- CSS: comeco-do-sonho.html → reset.css + chapter.css + comeco-do-sonho.css -->
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/sonho.css" />
+  <link rel="stylesheet" href="css/chapter.css" />
+  <link rel="stylesheet" href="css/comeco-do-sonho.css" />
 </head>
 
 <body>
   <header class="site-navbar">
     <div class="brand">
-      <img src="assets/images/logo-ufpa.png" alt="Logo UFPA" class="brand-logo">
+      <img src="assets/home/logo-ufpa.png" alt="Logo UFPA" class="brand-logo">
       <span class="brand-divider"></span>
       <strong>Lab. Jornalismo Digital</strong>
     </div>
 
+    <button class="nav-arrow nav-arrow-left" type="button" aria-label="Rolar menu para esquerda" data-scroll-menu="-1">
+      ‹
+    </button>
+
     <nav class="nav-scroll" id="navScroll" aria-label="Navegação principal">
+      <button class="nav-close" type="button" aria-label="Fechar menu" data-close-menu>×</button>
       <a href="index.html">Introdução</a>
-      <a href="comeco-do-sonho.html" class="active">Sonho</a>
-      <a href="#">Rotina</a>
-      <a href="#">Esperança</a>
-      <a href="#">Realidade</a>
-      <a href="#">Resultados</a>
-      <a href="o-funil.html" class="active">Funil</a>
-      <a href="#">Comissão</a>
-      <a href="#">Saúde</a>
-      <a href="#">Profissional</a>
-      <a href="#">Deu certo</a>
-      <a href="#">Talentos</a>
-      <a href="#">Conclusão</a>
+      <a href="comeco-do-sonho.html">Sonho</a>
+      <a href="a-rotina-invisivel.html">Rotina</a>
+      <a href="o-futebol-como-esperanca.html">Esperança</a>
+      <a href="a-realidade.html">Realidade</a>
+      <a href="resultados-precoce.html">Resultados</a>
+      <a href="o-funil.html">Funil</a>
+      <a href="o-olhar-da-comissao.html">Comissão</a>
+      <a href="saude-fisica-e-mental.html">Saúde</a>
+      <a href="da-base-para-o-profissional.html">Profissional</a>
+      <a href="os-talentos-que-ficaram.html">Talentos</a>
+      <a href="conclusao.html">Conclusão</a>
     </nav>
 
-    <button class="nav-arrow" type="button" aria-label="Rolar menu para direita" data-scroll-menu>
+    <button class="nav-arrow nav-arrow-right" type="button" aria-label="Rolar menu para direita" data-scroll-menu="1">
       ›
+    </button>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      ☰
     </button>
   </header>
 
   <main>
     <article class="story-content chapter-page">
       <header class="chapter-header">
-        <p class="kicker">CAPÍTULO 7</p>
-        <h1>O funil do futebol brasileiro</h1>
+        <p class="kicker">CAPÍTULO 2</p>
+        <h1>Onde o sonho começa</h1>
       </header>
 
-      <p class="lead">
-        O futebol brasileiro se tornou, ao longo do século XX, uma das maiores vitrines esportivas do mundo. A imagem do país que produz craques, exporta talentos e alimenta as principais ligas internacionais ajuda a construir uma percepção de abundância de oportunidades.
-      </p>
-
-      <p>
-        Entretanto, por trás das histórias de sucesso existe uma realidade muito menos visível: a esmagadora maioria dos jovens que ingressam nas categorias de base jamais chegará ao futebol profissional.
-      </p>
-
-      <p>
-        Uma 
-        <a href="https://revistaesquinas.casperlibero.edu.br/esportes/de-sete-mil-jogadores-apenas-um-vira-profissional-o-estreito-funil-das-categorias-de-base-do-futebol-brasileiro/" target="_blank" rel="noopener noreferrer">
-          reportagem
-        </a> 
-        da Revista Esquinas apresenta uma das estatísticas mais impactantes sobre o tema: para cada milhares de atletas que iniciam a formação em clubes e escolinhas, apenas uma parcela mínima consegue transformar o sonho em profissão.
-      </p>
-
-      <p>
-        O dado mostra aquilo que pesquisadores, treinadores e atletas costumam chamar de “funil do futebol”, um processo contínuo de seleção em que as exigências aumentam a cada categoria.
-      </p>
-
-      <p>
-        A lógica é simples. Quanto mais próximo do profissional, menor o número de vagas disponíveis. Nas primeiras etapas da formação, dezenas de atletas ocupam posições semelhantes. Com o passar dos anos, os clubes reduzem seus elencos, intensificam os critérios de avaliação e passam a considerar aspectos que vão além da qualidade técnica.
-      </p>
-
       <section class="media-row">
         <div class="media-text">
-          <p>
-            A percepção de quem trabalha diariamente na formação de atletas comprova os números apresentados pelas pesquisas. Com mais de duas décadas atuando nas categorias de base do Clube do Remo, o treinador Netão resume a dimensão dessa disputa em uma comparação que se tornou recorrente dentro do futebol.
+          <p class="lead">
+        O sonho de se tornar jogador profissional de futebol está presente em cada jovem que ingressa nas categorias de base dos três principais clubes da capital. Entretanto, não só de sonhos e paixão vivem esses atletas. A trajetória rumo ao profissionalismo exige dedicação, disciplina, treinamento constante e a capacidade de lidar com desafios físicos, psicológicos e sociais. Além do desenvolvimento técnico dentro de campo, os jovens precisam conciliar a rotina esportiva com os estudos, adaptar-se às exigências dos clubes e enfrentar a intensa competitividade característica do futebol de alto rendimento. Nesse cenário, o apoio familiar, a estrutura oferecida pelas instituições esportivas e o acompanhamento de profissionais especializados tornam-se fatores fundamentais para a formação integral desses atletas e para a concretização de seus objetivos profissionais. Para Analdo Malcher da Silva, ex -jogador e atual técnico do Sub - 17 da Tuna Luso Brasileira, o papel do treinador nas categorias de base ultrapassa os limites do campo, assumindo uma face essencialmente educativa. Analdo, que aos 16 anos iniciou sua própria jornada no clube como jogador do juvenil em 1996,  enfatiza que, embora os jovens tragam valores de suas famílias, o clube tem a responsabilidade de ensinar, educar e orientar.
           </p>
 
-          <blockquote>
-            “Eu até costumo brincar que é mais fácil passar em medicina do que ser jogador. O número de vagas é muito pequeno e a quantidade de pessoas concorrendo é muito grande.”
-          </blockquote>
         </div>
 
         <figure class="side-media">
-          <button 
-            class="media-open" 
-            type="button" 
-            data-modal-image="assets/images/funil/realidade-base.jpg"
-            aria-label="Ampliar arte sobre a realidade da base no futebol brasileiro"
+          <button
+            class="media-open"
+            type="button"
+            data-modal-image="assets/sonho/chuteira.png"
+            aria-label="Ampliar foto de jogador calçando a chuteira"
           >
-            <img 
-              src="assets/images/funil/realidade-base.png" 
-              alt="Arte sobre a realidade da base no futebol brasileiro"
+            <img
+              src="assets/sonho/chuteira.png"
+              alt="Jogador calçando a chuteira"
             >
           </button>
 
           <figcaption>
-            Arte: Equipe de Reportagem.
+            Foto: Equipe de Reportagem.
           </figcaption>
         </figure>
       </section>
-
-      <p>
-        A reportagem 
-        <a href="https://www.gazetaweb.com/blogs/blog-do-marlon/o-funil-invisivel-do-futebol-brasileiro-855020" target="_blank" rel="noopener noreferrer">
-          “O Funil Invisível do Futebol Brasileiro”
-        </a>, 
-        publicada pela GazetaWeb, destaca que a permanência no sistema depende de uma combinação complexa de fatores.
-      </p>
-
-      <p>
-        Talento, por si só, raramente é suficiente. Aspectos físicos, psicológicos, familiares, financeiros e até geográficos passam a influenciar diretamente as chances de sucesso.
-      </p>
-
-      <p>
-        Essa realidade se torna ainda mais visível quando observada a partir da região Norte. Historicamente distante dos principais centros de investimento do futebol brasileiro, o Pará convive com desafios estruturais que se somam à dificuldade natural do processo de formação.
-      </p>
-
-      <p>
-        A necessidade de deslocamento para outros estados, a menor exposição midiática e a concentração de observadores técnicos no eixo Sul-Sudeste acabam criando obstáculos maiores para jovens atletas da região.
-      </p>
-
-      <p>
-        A própria ideia de meritocracia esportiva, frequentemente utilizada para explicar o sucesso de determinados jogadores, encontra limites quando analisada sob uma perspectiva mais ampla.
-      </p>
-
-      <p>
-        O desenvolvimento de um atleta é influenciado por fatores sociais, econômicos e familiares que muitas vezes escapam ao seu controle.
-      </p>
 
       <section class="media-row">
         <div class="media-text">
           <p>
-            E para quem vive essa realidade diariamente, a experiência é marcada por renúncias que raramente aparecem nas estatísticas. Aos 20 anos, o volante Jorge Rafael Soares Gomes, da equipe Sub-20 do Paysandu, conhece de perto os sacrifícios exigidos pela busca por uma carreira no futebol.
+            Para ele, a função de um técnico de base não se restringe ao aprimoramento técnico e físico, trata-se de um processo de formação integral. <button class="inline-video-trigger" data-video-id="treinador-analdo">O treinador</button> destaca que, como nem todos os jovens alcançarão o sonho do profissionalismo, o maior objetivo deve ser formá-los como "cidadãos do bem", preparando-os para uma vida digna fora dos gramados. Ele enxerga o erro como parte inevitável e didática do processo de amadurecimento, além de acreditar que o desempenho esportivo está intimamente ligado ao bem-estar pessoal, reconhecendo que problemas enfrentados nos lares dos atletas podem refletir diretamente em campo, o que exige do treinador uma sensibilidade humana para lidar com cada indivíduo além do atleta.
           </p>
-
-          <blockquote>
-            “Desde os 13 anos eu saí de casa. A gente abre mão de muita coisa para perseguir esse sonho. Tem que ter foco, trabalhar e acreditar que é capaz.”
-          </blockquote>
         </div>
 
-        <figure class="side-media">
-          <button 
-            class="media-open" 
-            type="button" 
-            data-modal-image="assets/images/funil/jorge-gomes.jpg"
-            aria-label="Ampliar foto de Jorge Gomes durante treino"
-          >
-            <img 
-              src="assets/images/funil/jorge-gomes.png" 
-              alt="Jorge Gomes durante treino com a equipe Sub-20 do Paysandu"
-            >
-          </button>
-
-          <figcaption>
-            Jorge Gomes durante um treino com a equipe Sub-20 do Paysandu. Foto: Equipe de Reportagem.
-          </figcaption>
-        </figure>
+        <div class="side-video">
+          <div class="video-box">
+            <video id="treinador-analdo" src="assets/sonho/arnaldomalcher.mov" controls></video>
+          </div>
+          <figcaption style="font-size: 0.82rem; line-height: 1.35; color: #777777; font-weight: 300; text-align: center; margin-top: 10px;">Analdo Malcher comenta sobre o papel do treinador de base</figcaption>
+        </div>
       </section>
 
-      <p>
-        A fala do jogador traz uma dimensão muitas vezes invisível desse funil. Antes de disputar espaço em campo, muitos jovens precisam lidar com a distância da família, a mudança de cidade, a pressão por resultados e as incertezas de uma carreira em que poucas oportunidades são garantidas.
-      </p>
-
-      <p>
-        Artigo publicado pelo 
-        <a href="https://ludopedio.org.br/arquibancada/quem-nao-sonhou-em-ser-um-jogador/" target="_blank" rel="noopener noreferrer">
-          Ludopédio
-        </a> 
-        aponta que muitos jovens deixam o futebol não necessariamente por falta de qualidade, mas porque encontram barreiras estruturais que dificultam a continuidade da carreira.
-      </p>
-
-      <p>
-        A ausência de suporte psicológico, dificuldades econômicas e a necessidade de ingressar precocemente no mercado de trabalho figuram entre os fatores mais frequentes.
-      </p>
-
-      <p>
-        O ex-jogador e atual treinador do Sub-17 da Tuna Luso Brasileira, Analdo Malcher, defende que o sucesso da formação não pode ser medido apenas pela quantidade de atletas que se tornam profissionais.
-      </p>
-
-      <blockquote>
-        “Muitos não conseguem chegar a ser jogadores de futebol. Mas também é importante a gente educar para que eles sejam pessoas do bem, cidadãos do bem.”
-      </blockquote>
-
-      <p>
-        Embora o objetivo final seja a formação de atletas profissionais, a maior parte dos jovens que passa pelo sistema seguirá outros caminhos. Nesse sentido, as categorias de base também assumem um papel social e educacional, contribuindo para a formação de valores, disciplina e convivência coletiva.
-      </p>
-
-      <p>
-        O funil do futebol brasileiro revela, portanto, além das disputas por vagas, as tensões entre sonho e realidade, oportunidade e exclusão, talento e contexto social.
-      </p>
-
-      <p>
-        Entender seu funcionamento é fundamental para compreender os atletas que chegam ao topo e os milhares que ajudam a sustentar a base dessa pirâmide invisível.
-      </p>
-
-      <p>
-        Ainda assim, o sonho permanece alimentado por histórias de ascensão social que fazem parte do imaginário coletivo brasileiro. Em bairros periféricos, comunidades ribeirinhas e pequenas cidades do interior paraense, o futebol continua sendo visto como uma possibilidade concreta de transformação de vida.
-      </p>
-
-      <!--
-      <div class="chapter-navigation">
-        <a href="index.html">← Voltar para Introdução</a>
-        <a href="#">Próximo capítulo →</a>
-      </div>
-    -->
     </article>
+
+    
   </main>
-
-
-   <main>
-    <article class="story-content chapter-page">
-      <header class="chapter-header">
-        <p class="kicker">CAPÍTULO 7</p>
-        <h1>A transição da base para o profissional</h1>
-      </header>
-
-        <p class="lead">
-Se chegar às categorias de base já representa uma conquista para milhares de jovens atletas, permanecer no sistema até alcançar o futebol profissional é um desafio ainda maior. Entre o destaque nas categorias inferiores e a estreia no time principal existe um caminho repleto de obstáculos, marcado por exigências físicas, técnicas, táticas e emocionais que transformam a transição em uma das etapas mais delicadas da formação esportiva.
-      </p>
-
-      <p> 
-        <a href="https://www.cienciadabola.com.br/transicoes-de-atletas/?utm_source=/" target="_blank" rel="noopener noreferrer">
-          Estudos
-        </a> 
- sobre desenvolvimento de atletas apontam que essa passagem não deve ser entendida como um acontecimento isolado, e sim como um processo gradual. Ao chegar ao profissional, o jogador deixa de ocupar um ambiente voltado para a aprendizagem e passa a integrar um contexto em que os resultados se tornam prioridade. A cobrança aumenta, a concorrência por espaço se intensifica e os erros passam a ter consequências mais imediatas.
-      </p>
-      <p>
-        Segundo
-        <a href="https://ludopedio.org.br/arquibancada/o-desafio-da-sequencia-por-que-a-transicao-da-base-para-o-profissional-e-o-maior-teste-do-futebol-brasileiro/?editorial=global&utm_source=/" target="_blank" rel="noopener noreferrer">
-          análise
-        </a>
-         publicada pelo Ludopédio, a transição da base para o profissional é frequentemente considerada o maior teste do futebol brasileiro justamente porque exige que o atleta consiga manter seu desenvolvimento ao mesmo tempo em que responde às demandas competitivas do alto rendimento. Não basta ser um dos destaques da categoria; é preciso demonstrar capacidade para competir em um ambiente mais físico, mais rápido e mais exigente.
-      </p>
-      <p>
-        Esse cenário ajuda a explicar por que tantos jogadores promissores encontram dificuldades nessa etapa. O desafio não está na adaptação ao ritmo de jogo e na capacidade de lidar com novas responsabilidades. Questões relacionadas à maturidade emocional, à pressão por resultados e à gestão da própria carreira passam a fazer parte da rotina dos atletas.
-      </p>
-      <p>
-        No Clube do Remo, o treinador Netão, destaca que a preparação para esse momento começa muito antes da chegada ao profissional. Segundo ele, o trabalho desenvolvido nas categorias iniciais busca oferecer aos atletas uma compreensão ampla do jogo, permitindo que eles cheguem mais preparados para enfrentar as exigências das etapas seguintes. “Acredito muito no conteúdo, na informação, em ter uma alfabetização tática. A gente começa isso desde as categorias menores, ensinando o futebol, fazendo eles entenderem as fases do jogo e aprenderem a jogar em diferentes posições.”
-      </p>
-      <p>
-        Para Netão, a formação também não pode ser resumida ao treinamento técnico. O processo envolve aspectos familiares, emocionais e educacionais que influenciam diretamente a trajetória dos atletas. Mesmo assim, ele reconhece que a chegada ao profissional depende de uma série de fatores que muitas vezes fogem ao controle dos clubes e dos próprios jogadores. “São vários componentes juntos. Tem a questão familiar, a questão do atleta, a questão intelectual e várias outras situações que acabam criando esse contexto que é o final, que é o profissional.”
-      </p>
-      <p>
-        Entretanto, a responsabilidade pela transição não recai apenas sobre os jogadores. O modo como os clubes paraenses organizam suas categorias de base também influencia diretamente as chances de um atleta alcançar espaço no elenco principal. Embora a formação de atletas seja frequentemente apontada como um dos caminhos para fortalecer os clubes do estado, nem sempre os resultados alcançados nas categorias de base se refletem no aproveitamento desses jogadores no futebol profissional.
-      </p>
-      <p>
-        A pressão por conquistas faz com que, muitas vezes, o desempenho da base seja avaliado pelos títulos conquistados em competições estaduais e regionais. No entanto, vencer torneios e formar atletas para o elenco principal nem sempre são objetivos que caminham na mesma direção. Enquanto os títulos oferecem retorno imediato e visibilidade ao trabalho realizado, a formação exige tempo, paciência e planejamento de longo prazo.
-      </p>
-      <p>
-        Essa lógica pode gerar situações em que equipes bem-sucedidas nas categorias inferiores não conseguem transformar seus destaques em jogadores efetivamente aproveitados no profissional. Em contrapartida, existem clubes que, mesmo sem dominar as competições de base nos últimos anos, conseguem integrar jovens atletas ao elenco principal, oferecer minutos em campo e valorizá-los no mercado.
-      </p>
-      <p>
-        O desafio está justamente em compreender que o sucesso de um projeto de formação não pode ser medido pelas taças levantadas. A busca por resultados imediatos pode favorecer atletas mais desenvolvidos fisicamente ou jogadores capazes de entregar rendimento instantâneo nas competições de base. Já o processo de formação exige uma visão mais ampla, voltada para o desenvolvimento gradual de aspectos técnicos, táticos, físicos e comportamentais. Nem sempre o jovem que se destaca aos 16 ou 17 anos será aquele que chegará mais preparado para competir no futebol profissional.
-      </p>
-      <p>
-        Essa perspectiva também influencia o recrutamento realizado pelos clubes paraenses. Atletas que estão no último ano de formação costumam representar apostas mais arriscadas, já que existe pouco tempo para desenvolver suas qualidades e corrigir deficiências antes da transição para o profissional. Por isso, muitas equipes preferem investir em jogadores mais jovens, que ainda possuem alguns anos de trabalho pela frente e podem ser desenvolvidos dentro da metodologia do clube.
-      </p>
-      <p>
-        Nesse caso, a transição deixa de depender exclusivamente do talento individual e passa a estar diretamente ligada ao projeto esportivo adotado por cada instituição. Clubes que enxergam a base como uma extensão do futebol profissional tendem a criar mecanismos mais eficientes de integração, oferecendo oportunidades de treinamento, convivência e até minutos em competições oficiais. Já quando a formação é tratada como um departamento isolado, voltado principalmente para a conquista de resultados nas categorias inferiores, o caminho até o elenco principal tende a se tornar mais estreito.
-      </p>
-      <p>
-        No contexto paraense, essa diferença de abordagem ajuda a explicar por que alguns clubes conseguem colocar jovens atletas em evidência no futebol profissional, enquanto outros, apesar dos resultados obtidos na base, encontram dificuldades para transformar seus talentos em protagonistas dentro do próprio clube.
-      </p>
-      <p>
-        Essa discussão também ajuda a compreender por que fatores estruturais seguem sendo apontados como diferenciais importantes no processo de formação e transição para o profissional. Para Paulo Mendes, treinador da categoria sub-17 do Paysandu, a qualidade do ambiente oferecido aos atletas influencia diretamente no desenvolvimento esportivo e humano dos jogadores.
-      </p>
-      <p>
-        Entre os aspectos destacados por ele está a questão dos alojamentos, que permitem aos clubes acompanhar de forma mais próxima a rotina dos jovens atletas. “Quando você tem um alojamento, você cria uma rotina para o atleta. Uma rotina de alimentação, de sono e de descanso. Todos esses fatores são fatores de performance e rendimento.”
-      </p>
-       <!--trecho da entrevista com Paulo Mendes-->
-       <section class="media-row video-trigger-row">
-  <div class="media-text">
-    <p>
-      Além da estrutura física, 
-      <button 
-        class="inline-video-trigger" 
-        type="button"
-        data-play-video="video-paulo-mendes"
-      >
-        Paulo destaca
-      </button> 
-      a importância dos profissionais envolvidos na formação. Para ele, treinadores, psicólogos, preparadores físicos e demais integrantes da comissão técnica exercem papel fundamental no desenvolvimento esportivo e no acompanhamento humano dos atletas.
-    </p>
-
-    <blockquote>
-      “O papel do treinador de base não é olhar apenas para o atleta. É olhar primeiro para a pessoa. Existe o desenvolvimento humano e o desenvolvimento esportivo, e os dois caminham juntos.”
-    </blockquote>
-  </div>
-
-  <figure class="side-media side-video">
-    <div class="video-box">
-      <video 
-        id="video-paulo-mendes"
-        controls
-        preload="metadata"
-        poster="assets/images/funil/poster-paulo-mendes.jpg"
-      >
-        <source src="assets/videos/paulo-mendes.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo HTML5.
-      </video>
-
-      <button 
-        class="video-expand-button"
-        type="button"
-        data-modal-video="assets/videos/paulo-mendes.mp4"
-        data-poster="assets/images/funil/poster-paulo-mendes.jpg"
-      >
-        Expandir vídeo
-      </button>
-    </div>
-
-    <figcaption>
-      Trecho da entrevista com Paulo Mendes. Vídeo: Equipe de Reportagem.
-    </figcaption>
-  </figure>
-</section>
-        
 
   <div class="media-modal" id="mediaModal" aria-hidden="true">
     <button class="modal-close" type="button" aria-label="Fechar mídia" data-close-modal>
@@ -333,5 +116,16 @@ Se chegar às categorias de base já representa uma conquista para milhares de j
   </div>
 
   <script src="js/main.js"></script>
-</body>
-</html>
+  <script>
+    document.querySelectorAll('.inline-video-trigger').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const videoId = this.getAttribute('data-video-id');
+        const video = document.getElementById(videoId);
+        if (video) {
+          video.play();
+          video.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    });
+  </script>

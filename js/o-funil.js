@@ -1,4 +1,4 @@
-const funilRevealElements = document.querySelectorAll(".reveal-funil");
+const funilRevealElements = document.querySelectorAll(".reveal-funil, .reveal-on-scroll");
 
 if (funilRevealElements.length) {
   const funilObserver = new IntersectionObserver(
