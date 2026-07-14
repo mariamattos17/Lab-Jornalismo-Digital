@@ -3,6 +3,56 @@ const menuClose = document.querySelector("[data-close-menu]");
 const navScroll = document.querySelector("#navScroll");
 const navLinks = navScroll ? [...navScroll.querySelectorAll("a")] : [];
 const siteNavbar = document.querySelector(".site-navbar");
+const brandLinkTarget = "index.html";
+
+const chapterOrder = [
+  { href: "index.html", label: "Introdução" },
+  { href: "comeco-do-sonho.html", label: "Sonho" },
+  { href: "a-rotina-invisivel.html", label: "Rotina" },
+  { href: "o-futebol-como-esperanca.html", label: "Esperança" },
+  { href: "a-realidade.html", label: "Realidade" },
+  { href: "resultados-precoce.html", label: "Resultados" },
+  { href: "o-funil.html", label: "Funil" },
+  { href: "o-olhar-da-comissao.html", label: "Comissão" },
+  { href: "saude-fisica-e-mental.html", label: "Saúde" },
+  { href: "da-base-para-o-profissional.html", label: "Profissional" },
+  { href: "os-talentos-que-ficaram.html", label: "Talentos" },
+  { href: "conclusao.html", label: "Conclusão" }
+];
+
+function getCurrentPage() {
+  let currentPage = window.location.pathname;
+  currentPage = currentPage.replace(/\/$/, "");
+  currentPage = currentPage.split("/").filter(Boolean).pop() || "index.html";
+
+  if (!currentPage.includes(".html")) {
+    currentPage += ".html";
+  }
+
+  return currentPage;
+}
+
+function setupBrandHomeLink() {
+  const brand = document.querySelector(".brand");
+  if (!brand || brand.closest("a")) return;
+
+  brand.setAttribute("role", "link");
+  brand.setAttribute("tabindex", "0");
+  brand.setAttribute("aria-label", "Ir para a página inicial");
+  brand.classList.add("brand-home-link");
+
+  const goHome = () => {
+    window.location.href = brandLinkTarget;
+  };
+
+  brand.addEventListener("click", goHome);
+  brand.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      goHome();
+    }
+  });
+}
 
 function setMenuOpen(isOpen) {
   if (!navScroll) return;
@@ -19,16 +69,7 @@ function setMenuOpen(isOpen) {
 function updateActiveNavLink() {
   if (!navLinks.length) return;
 
-  // Get current page more robustly
-  let currentPage = window.location.pathname;
-  // Remove trailing slashes
-  currentPage = currentPage.replace(/\/$/, "");
-  // Get last segment
-  currentPage = currentPage.split("/").filter(Boolean).pop() || "index.html";
-  // Ensure .html extension
-  if (!currentPage.includes(".html")) {
-    currentPage += ".html";
-  }
+  const currentPage = getCurrentPage();
 
   let activeLink = null;
 
@@ -60,7 +101,55 @@ function updateActiveNavLink() {
   }
 }
 
+function createChapterNavigationLink(chapter, direction) {
+  const link = document.createElement("a");
+  link.href = chapter.href;
+  link.className = `chapter-nav-card chapter-nav-${direction}`;
+  link.innerHTML = `
+    <span class="chapter-nav-direction">${direction === "previous" ? "Anterior" : "Próxima"}</span>
+    <strong>${chapter.label}</strong>
+  `;
+
+  return link;
+}
+
+function addChapterNavigation() {
+  const currentPage = getCurrentPage();
+  const currentIndex = chapterOrder.findIndex((chapter) => chapter.href === currentPage);
+  const main = document.querySelector("main");
+  const article = document.querySelector("main article:last-of-type");
+
+  if (currentIndex === -1 || !main || document.querySelector(".chapter-bottom-navigation")) return;
+
+  const previousChapter = chapterOrder[currentIndex - 1];
+  const nextChapter = chapterOrder[currentIndex + 1];
+  const navigation = document.createElement("nav");
+  navigation.className = "chapter-bottom-navigation";
+  navigation.setAttribute("aria-label", "Navegação entre páginas");
+
+  if (previousChapter) {
+    navigation.appendChild(createChapterNavigationLink(previousChapter, "previous"));
+  } else {
+    const placeholder = document.createElement("span");
+    placeholder.className = "chapter-nav-spacer";
+    navigation.appendChild(placeholder);
+  }
+
+  if (nextChapter) {
+    navigation.appendChild(createChapterNavigationLink(nextChapter, "next"));
+  } else {
+    const homeChapter = chapterOrder[0];
+    const homeLink = createChapterNavigationLink(homeChapter, "next");
+    homeLink.querySelector(".chapter-nav-direction").textContent = "Voltar ao início";
+    navigation.appendChild(homeLink);
+  }
+
+  (article || main).appendChild(navigation);
+}
+
+setupBrandHomeLink();
 updateActiveNavLink();
+addChapterNavigation();
 
 if (menuToggle && navScroll) {
   menuToggle.addEventListener("click", () => {
