@@ -11,7 +11,7 @@
 
 **O Papel da Base no Futebol Paraense** é um projeto de jornalismo digital em formato de grande reportagem (*long-form*) desenvolvido originalmente no **Laboratório de Jornalismo Digital da UFPA** (Universidade Federal do Pará).
 
-O objetivo principal é documentar detalhadamente a formação de jovens atletas de futebol nos três maiores clubes do estado: **Clube do Remo, Paysandu Sport Club e Tuna Luso Brasileira**. Através de uma narrativa imersiva, o site aborda temas como a rotina invisível de treinos, o aspecto psicológico e físico, o funil do profissionalismo, a desigualdade regional e as expectativas de ascensão social de jovens que buscam espaço longe do eixo Sul-Sudeste brasileiro.
+O objetivo principal é documentar detalhadamente a formação de jovens atletas de futebol nos três maiores clubes do estado: **Clube do Remo, Paysandu Sport Club e Tuna Luso Brasileira**. Através de uma narrativa imersiva, o site aborda temas como a rotina invisível de treinos, o aspecto psicológico e físico e o funil do profissionalismo.
 
 ---
 
